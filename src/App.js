@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import { Provider } from 'react-redux';
-
-import store from './redux/store'
+import { Link } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
+      <div>
         <h1>Marvel API</h1>
-      </Provider>
+        <Link to="/foo">
+          <button>Go to Foo page</button>
+        </Link>
+      </div>
     );
   }
 }
